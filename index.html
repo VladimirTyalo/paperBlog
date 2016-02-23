@@ -2,45 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/base/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Paper Blog | home</title>
   </head>
   <body class="index">
     <head class="header">
-      <div class="header__container">
-        <ul class="header__lang-list">
-          <li class="header__lang-list-item">en</li>
-          <li class="header__lang-list-item">fra</li>
-          <li class="header__lang-list-item">ru</li>
-        </ul>
-        <div class="header__user-block">
-          <div class="header__login">sign up/</div>
-          <div class="header__logout">sign in</div>
+      <div class="header-top">
+        <div class="header-top__content">
+          <ul class="header-top__lang-list">
+            <li class="header-top__lang-list-item"><a class="header-top__link" href="">eng</a></li>
+            <li class="header-top__lang-list-item"><a class="header-top__link" href="">fra</a></li>
+            <li class="header-top__lang-list-item"><a class="header-top__link" href="">ru</a></li>
+          </ul>
+          <div class="header-top__user-block">
+            <div class="header-top__login"><a class="header-top__link" href="">sign in/</a></div>
+            <div class="header-top__signup"><a class="header-top__link" href="">sign up</a></div>
+          </div>
+          <ul class="social-links social-links--header">
+            <li class="social-links__item social-links__item--fb"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--tw"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--g"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--tumblr"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--pinterest"><a href="#"></a></li>
+          </ul>
         </div>
-        <ul class="social-links">
-          <li class="social-links__item social-links__item--fb"><a href="#"></a></li>
-          <li class="social-links__item social-links__item--tw"><a href="#"></a></li>
-          <li class="social-links__item social-links__item--g+"><a href="#"></a></li>
-          <li class="social-links__item social-links__item--tumblr"><a href="#"></a></li>
-          <li class="social-links__item social-links__item--pinterest"><a href="#"></a></li>
-        </ul>
       </div>
-
-      <a href="#" class="header__logo">
-        <img src="" alt="" class="header__logo-img">
-        <span class="header__logo-caption">Creative Blog with Material Design</span>
+      <a href="#" class="header-logo">
+        <div class="header-logo__container">
+          <div class="header__logo-icon"></div>
+          <div class="header-logo__name"><a href="#">Paper</a></div>
+          <span class="header-logo__caption">Creative Blog with Material Design</span>
+        </div>
       </a>
 
       <div class="header__nav-wrapper">
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link"></a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Home</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Layout</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Features</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Categories</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
+            <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
           </ul>
           <li class="header-nav__search-box">
               <input type="text">
@@ -56,7 +62,7 @@
         </nav>
       </div>
 
-      <div class="header-bottom-container">
+      <div class="header-bottom__content">
         <div class="slider slider--main">
 
         </div>
@@ -69,9 +75,10 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+          </p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -79,9 +86,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -89,9 +96,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -99,9 +106,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -109,9 +116,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -119,9 +126,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -129,9 +136,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -139,9 +146,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -149,9 +156,9 @@
         <article class="post">
           <img src="" alt="" class="post__img">
           <div class="post__category-icon"></div>
-          <h2 class="post__heading"></h2>
-          <p class="post__preview"></p>
-          <a href="" class="post__read-more"></a>
+          <h2 class="post__heading">My Daily Reading Lists</h2>
+          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.</p>
+          <a href="" class="post__read-more">Continue reading</a>
           <div class="post__info">
             <!-- TODO add content -->
           </div>
@@ -160,9 +167,9 @@
           <li class="paginator__item paginator__item--prev">
             <a href="" class="paginator__link"></a>
           </li>
-          <li class="paginator__item"><a href="" class="paginator__link"></a></li>
-          <li class="paginator__item"><a href="" class="paginator__link"></a></li>
-          <li class="paginator__item"><a href="" class="paginator__link"></a></li>
+          <li class="paginator__item"><a href="" class="paginator__link">1</a></li>
+          <li class="paginator__item"><a href="" class="paginator__link">2</a></li>
+          <li class="paginator__item"><a href="" class="paginator__link">3</a></li>
           <li class="paginator__item">
             <a href="" class="paginator__link paginator__link--next"></a>
           </li>
@@ -173,18 +180,58 @@
 
     <footer class="footer">
       <div class="footer-top">
-        <div class="footer-top__contacts"></div>
-        <form action="" class="footer-top__subscribe"></form>
-        <div class="footer-top__galery"></div>
+        <div class="footer-top__contacts">
+          <h3 class="footer-top__heading">About Us</h3>
+          <p class="footer-top__contacts-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis. </p>
+        </div>
+
+        <div class="footer-top__social-block">
+          <h3 class="footer-top__heading">Connect with Us</h3>
+          <ul class="social-links social-links--footer">
+            <li class="social-links__item social-links__item--fb"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--tw"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--g+"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--tumblr"><a href="#"></a></li>
+            <li class="social-links__item social-links__item--pinterest"><a href="#"></a></li>
+          </ul>
+        </div>
+
+        <form action="" class="subscribe-form">
+          <fieldset class="subscribe-form__user-info">
+            <legend class="footer-top__heading">Daily Newsletters</legend>
+            <input class="subscribe-form__name" type="text" >
+            <input  class="subscribe-form__mail" type="text">
+          </fieldset>
+          <button class="btn btn--subscribe" type="submit">Subscribe</button>
+        </form>
+        <div class="footer-top__galery">
+          <h3 class="footer-top__heading">Photos in Instagram</h3>
+          <div class="mini-galery mini-galery--footer"></div>
+        </div>
       </div>
+
       <div class="footer-bottom">
-        <span class="footer-bottom__moto"></span>
-        <div class="footer-bottom__nav"></div>
+        <span class="footer-bottom__moto">Paper - Clean Blog WordPress Theme with Material Design</span>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Help</a></li>
+          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Terms</a></li>
+          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">About</a></li>
+          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Contacts</a></li>
+        </ul>
       </div>
+
     </footer>
 
-
+   <div class="ul">
+     <li><a href=""></a></li>
+     <li><a href=""></a></li>
+     <li><a href=""></a></li>
+     <li><a href=""></a></li>
+     <li><a href=""></a></li>
+   </div>
 
 
   </body>
+
+
 </html>

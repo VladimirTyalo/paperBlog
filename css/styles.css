@@ -1,4 +1,137 @@
-/* line 6, ../sass/modules/_header.scss */
-.box {
+/* sprite */
+/* line 7, ../sass/base/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../sass/modules/_header.scss */
+.header {
+  max-width: 100%;
+  background: #ffffff;
+}
+
+/* line 10, ../sass/modules/_header.scss */
+.header-top {
+  background: #000000;
+}
+/* line 12, ../sass/modules/_header.scss */
+.header-top__content {
+  display: flex;
+  min-width: 200px;
+  max-width: 1170px;
+  min-height: 22px;
+  margin: 0 auto;
+  padding-top: 4px;
   color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  /* line 12, ../sass/modules/_header.scss */
+  .header-top__content {
+    flex-direction: column-reverse;
+  }
+}
+/* line 24, ../sass/modules/_header.scss */
+.header-top__lang-list {
+  padding-left: 5px;
+  list-style: none;
+  white-space: nowrap;
+  flax: 0 0 auto;
+}
+/* line 30, ../sass/modules/_header.scss */
+.header-top__user-block {
+  margin-right: 18px;
+  text-align: end;
+  white-space: nowrap;
+  flex: 1 1 0px;
+}
+/* line 36, ../sass/modules/_header.scss */
+.header-top__lang-list-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 40, ../sass/modules/_header.scss */
+.header-top__login {
+  display: inline-block;
+}
+/* line 43, ../sass/modules/_header.scss */
+.header-top__signup {
+  display: inline-block;
+}
+/* line 46, ../sass/modules/_header.scss */
+.header-top__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/* line 63, ../sass/modules/_header.scss */
+.social-links {
+  text-align: end;
+  flex: 0 0 auto;
+}
+/* line 67, ../sass/modules/_header.scss */
+.social-links__item {
+  display: inline-block;
+}
+/* line 70, ../sass/modules/_header.scss */
+.social-links__item a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0 2px 0 2px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url('../img/icons-sd0ab2986b2.png');
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+/* line 81, ../sass/modules/_header.scss */
+.social-links__item--fb a {
+  background-position: -1px -183px;
+}
+/* line 84, ../sass/modules/_header.scss */
+.social-links__item--tw a {
+  background-position: -1px -846px;
+}
+/* line 87, ../sass/modules/_header.scss */
+.social-links__item--g a {
+  background-position: -1px -217px;
+}
+/* line 90, ../sass/modules/_header.scss */
+.social-links__item--tumblr a {
+  background-position: -1px -812px;
+}
+/* line 93, ../sass/modules/_header.scss */
+.social-links__item--pinterest a {
+  background-position: -1px -541px;
+}
+
+/* line 5, ../sass/modules/_header_logo.scss */
+.header-logo {
+  max-width: 100%;
+}
+/* line 7, ../sass/modules/_header_logo.scss */
+.header-logo__container {
+  width: 320px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+/* line 12, ../sass/modules/_header_logo.scss */
+.header-logo__logo-icon {
+  display: inline-block;
+  width: 46px;
+  background: url('../img/icons-sd0ab2986b2.png') -1px -299px;
+  heigth: 60px;
+}
+/* line 19, ../sass/modules/_header_logo.scss */
+.header-logo__name {
+  display: inline-block;
+}
+/* line 22, ../sass/modules/_header_logo.scss */
+.header-logo__caption {
+  display: block;
 }

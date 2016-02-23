@@ -1,1 +1,25 @@
 $white: #ffffff;
+$bg-dark-gray: #757575;
+$bg-light-gray: #bdbdbd;
+$fnt-light-gray: #6c6c6c;
+$black: #000000;
+$dark-blue: #7986cb;
+$light-blue: #64b5f6;
+$pink: #f06292;
+$light-green: #aed581;
+$dark-geen: #4db6ac;
+$dark-orange: #ffa726;
+$light-orange: #f8a700;
+
+// background colors //
+$bgHeaderTop: $black;
+$bgHeader: $white;
+$bgHeaderBottom: $bg-dark-gray;
+$bgSlider: $bg-light-gray;
+$position: 100% !default;
+$spacing: 10px !default;
+$repeat: no-repeat !default;
+
+/* sprite */
+$icons: sprite-map("icons/*.png", $spacing: 10px);
+

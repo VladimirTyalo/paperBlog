@@ -1,0 +1,26 @@
+@import "./../base/_variables.scss";
+@import "./../base/_mixins.scss";
+@import "./../base/_functions.scss";
+
+.header-logo {
+  max-width: 100%;
+  &__container {
+    width: 320px;
+    margin: 0 auto;
+    background: $bgHeader;
+  }
+  &__logo-icon {
+    display: inline-block;
+    width: 46px;
+    background: sprite($icons,icon-logo, $adjustLeft, $adjustTop);
+
+    heigth: 60px;
+  }
+  &__name {
+    display: inline-block;
+  }
+  &__caption {
+    display: block;
+  }
+}
+
