@@ -4,7 +4,19 @@
 @import "./../base/_typography.scss";
 
 
-ul {
+ul,a, span, li{
   margin: 0;
   padding: 0;
 }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+       -o-box-sizing: border-box;
+}
+
+

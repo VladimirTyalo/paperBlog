@@ -1,0 +1,59 @@
+@import "./../base/_variables.scss";
+@import "./../base/_mixins.scss";
+@import "./../base/_functions.scss";
+
+.header__nav-wrapper {
+  width: auto;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.header-nav {
+  min-width: $min-width-xl;
+  max-width: $max-width-xl;
+  margin: 0 auto;
+
+  &__list {
+    font-size: 0;
+    display: inline-block;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__link {
+    padding-top: 25px;
+    padding-right: 36px;
+    padding-bottom: 20px;
+    color: $clrFontNav;
+    text-decoration: none;
+    @include font(15px, 24px, "Roboto Slab");
+    font-weight: bold;
+  }
+
+  &__search-box {
+    padding-top: 25px;
+    padding-right: 36px;
+    padding-bottom: 20px;
+    color: $clrFontNav;
+    text-decoration: none;
+
+    display: inline-block;
+  }
+}
+
+.burger-wrapper {
+    width: 30px;
+    height: 30px;
+    background: orange;
+    display: inline-block;
+}
+.burger-menu {
+
+
+  &__item {
+    display: none;
+    list-style: none;
+  }
+}
+
+

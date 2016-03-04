@@ -3,23 +3,48 @@ $bg-dark-gray: #757575;
 $bg-light-gray: #bdbdbd;
 $fnt-light-gray: #6c6c6c;
 $black: #000000;
+$light-black: #212121;
 $dark-blue: #7986cb;
 $light-blue: #64b5f6;
 $pink: #f06292;
 $light-green: #aed581;
-$dark-geen: #4db6ac;
+$dark-green: #4db6ac;
 $dark-orange: #ffa726;
 $light-orange: #f8a700;
 
 // background colors //
+$bgPaginatorActive: $dark-orange;
 $bgHeaderTop: $black;
 $bgHeader: $white;
 $bgHeaderBottom: $bg-dark-gray;
 $bgSlider: $bg-light-gray;
+$bgFooter: $light-black;
+$bgFooterSocialLinks: $black;
+
+
 $position: 100% !default;
 $spacing: 10px !default;
 $repeat: no-repeat !default;
 
-/* sprite */
-$icons: sprite-map("icons/*.png", $spacing: 10px);
 
+$bgIconTravel: $light-blue;
+$bgIconFasion: $pink;
+$bgIconFeatured: $light-orange;
+$bgIconMusic: $dark-green;
+$bgIconPhotography: $light-green;
+$bgIconLifeStyle: $dark-blue;
+
+// font colors //
+
+$clrFontNav: #212121;
+$clrFontLogo: #ffa726;
+
+/* sprite */
+$icons: sprite-map("icons/*.png", $spacing: 70px);
+
+
+/* widths */
+
+$max-width-xl: 1170px;
+$min-width-xl: 200px;
+$flexBasePost: 300/370*1%;

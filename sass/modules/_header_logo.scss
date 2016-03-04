@@ -3,10 +3,13 @@
 @import "./../base/_functions.scss";
 
 .header-logo {
+  display: block;
   max-width: 100%;
   &__container {
+    position: relative;
     width: 320px;
     margin: 0 auto;
+    padding-bottom: 40px;
     background: $bgHeader;
   }
   &__logo-icon {
@@ -14,13 +17,34 @@
     width: 46px;
     background: sprite($icons,icon-logo, $adjustLeft, $adjustTop);
 
-    heigth: 60px;
+    height: 60px;
   }
   &__name {
     display: inline-block;
+    padding-bottom: 20px;
+    & a {
+      font-weight: bold;
+      color: $clrFontLogo;
+      text-decoration: none;
+
+      @include font(72px, 72px, "Roboto Slab");
+    }
   }
   &__caption {
     display: block;
+    color: #757575;
+
+    @include font(15px, 26px, "Roboto Slab");
+  }
+  &__icon {
+    position: absolute;
+    top: 15px;
+    left: -50px;
+    width: 48px;
+    height: 60px;
+    background-image: sprite-url($icons);
+    background-repeat: no-repeat;
+    background-position: sprite-position($icons, icon-logo);
   }
 }
 

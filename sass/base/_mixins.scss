@@ -1,6 +1,6 @@
 @import "compass/utilities/sprites";
 
-@mixin font($fontName: "Roboto", $font-size: 24px, $line-height: 30px) {
+@mixin font( $font-size: 24px, $line-height: 30px, $fontName: "Roboto") {
   font-family: $fontName, "Arial", serif;
   font-size: $font-size;
   line-height: $line-height;

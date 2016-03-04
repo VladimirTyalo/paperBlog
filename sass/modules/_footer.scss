@@ -3,3 +3,101 @@
 @import "./../base/_functions.scss";
 
 
+
+.social {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+
+.footer {
+  color: white;
+  background: $bgFooter;
+}
+
+.footer-top {
+  display: flex;
+          flex-direction: row;
+  min-width: $min-width-xl;
+  max-width: $max-width-xl;
+  margin: 0 auto;
+  padding-top: 56px;
+  text-align: space-between;
+
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+      -ms-flex-direction: row;
+       -o-flex-direction: row;
+  justify-content: stretch;
+  &__contacts {
+    margin-right: 25px;
+
+    flex: 0 0 370px;
+  }
+  &__heading {
+    margin-top: 0;
+    padding-top: 0;
+
+    @include font(24px, 24px);
+  }
+  &__contacts-info {
+    @include font(14px, 24px);
+  }
+  &__galery {
+    flex: 0 0 372px;
+  }
+}
+
+.subscribe-form {
+  margin-right: 25px;
+
+  @include font(24px, 24px);
+  flex: 0 0 370px;
+  &__user-info {
+    border: none;
+    outline: none;
+  }
+}
+
+
+.mini-galery {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  &__photo {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.social-links--footer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  .social-links__item {
+    margin-right: 10px;
+
+    a {
+      width: 56px;
+      height: 56px;
+      background-color: black;
+      border-radius: 0px;
+      // background-size: 120% 120%;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+

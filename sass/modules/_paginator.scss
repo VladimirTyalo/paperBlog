@@ -1,0 +1,65 @@
+@import "./../base/_variables.scss";
+@import "./../base/_mixins.scss";
+@import "./../base/_functions.scss";
+
+
+@mixin arrow ($rotate, $color, $size, $thick) {
+
+  width: $size;
+  height: $size;
+  border: $thick solid transparent;
+  border-top: $thick solid $color;
+  border-left: $thick solid $color;
+  -webkit-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  transform: rotate($rotate);
+
+}
+
+
+.paginator {
+  max-width: 450px;
+  margin: 55px auto;
+
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+    width: 57px;
+    height: 57px;
+
+     &--active {
+        border-radius: 50%;
+        background-color: $bgPaginatorActive;
+        color: white;
+        display: inline-block;
+        text-align: baseline;
+      }
+
+
+    &--prev {
+       @include arrow(-45deg, orange, 15px, 4px);
+    }
+
+    &--next {
+       @include arrow(135deg, orange, 15px, 4px);
+    }
+  }
+
+  &__link {
+      @include font(24px, 26px);
+      text-decoration: none;
+      padding: 13px 20px 10px 20px;
+      color: #2f2f2f;
+      display: inline-block;
+      vertical-align: text-bottom;
+  }
+
+}
+
+
+
+
+
