@@ -88,7 +88,7 @@ $iconBorderRadius: 50%;
     background-position: sprite-position($icons, icon-twitter, $adjustLeft, $adjustTop);
   }
   &__item--g a {
-    background-position: sprite-position($icons, icon-gplus, $adjustLeft, $adjustTop);
+    background-position: sprite-position($icons, icon-gplus, $adjustLeft , $adjustTop);
   }
   &__item--tumblr a {
     background-position: sprite-position($icons, icon-tumblr, $adjustLeft, $adjustTop);

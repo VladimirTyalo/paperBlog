@@ -6,50 +6,60 @@
   width: auto;
   border-top: 1px solid #e0e0e0;
   text-align: center;
+  margin-top: 40px;
 }
 
 .header-nav {
   min-width: $min-width-xl;
   max-width: $max-width-xl;
   margin: 0 auto;
-
   &__list {
-    font-size: 0;
     display: inline-block;
+    font-size: 0;
   }
   &__item {
     display: inline-block;
+    &:last-child a {
+      padding-right: 25px;
+    }
   }
   &__link {
+    display: block;
     padding-top: 25px;
     padding-right: 36px;
     padding-bottom: 20px;
-    color: $clrFontNav;
-    text-decoration: none;
-    @include font(15px, 24px, "Roboto Slab");
     font-weight: bold;
-  }
-
-  &__search-box {
-    padding-top: 25px;
-    padding-right: 36px;
-    padding-bottom: 20px;
     color: $clrFontNav;
     text-decoration: none;
 
+    @include font(15px, 24px, "Roboto Slab");
+  }
+  &__input-label {
     display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: sprite-url($icons);
+    background-repeat: no-repeat;
+    background-position: sprite-position($icons, icon-search, 0px, 10px);
+    vertical-align: -25%;
+  }
+  &__input {
+    display: none;
+
+    &:active {
+      display: block;
+      background: orange;
+    }
   }
 }
 
 .burger-wrapper {
-    width: 30px;
-    height: 30px;
-    background: orange;
-    display: inline-block;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: orange;
 }
 .burger-menu {
-
-
   &__item {
     display: none;
     list-style: none;

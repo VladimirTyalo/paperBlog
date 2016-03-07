@@ -3,10 +3,19 @@
 @import "./../base/_tag_defaults.scss";
 @import "./../base/_typography.scss";
 
+body {
+  min-width: 320px;
+}
 
 ul,a, span, li{
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
 }
 
 *,
@@ -17,6 +26,13 @@ ul,a, span, li{
           box-sizing: border-box;
 
        -o-box-sizing: border-box;
+}
+
+form, fieldset, legend, input, button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
 }
 
 

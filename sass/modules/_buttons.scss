@@ -1,3 +1,18 @@
 @import "./../base/_variables.scss";
 @import "./../base/_mixins.scss";
 @import "./../base/_functions.scss";
+
+
+.btn {
+  @include font(14px, 24px, "Roboto");
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 40%;
+
+}
+
+.btn--subscribe {
+  background: $bgButtonSubscribe;
+}

@@ -4,59 +4,59 @@
 
 
 @mixin arrow ($rotate, $color, $size, $thick) {
-
   width: $size;
   height: $size;
   border: $thick solid transparent;
   border-top: $thick solid $color;
   border-left: $thick solid $color;
   -webkit-transform: rotate($rotate);
-  -ms-transform: rotate($rotate);
-  -o-transform: rotate($rotate);
-  transform: rotate($rotate);
-
+      -ms-transform: rotate($rotate);
+       -o-transform: rotate($rotate);
+          transform: rotate($rotate);
 }
 
 
 .paginator {
+  float: 1 1 100%;
   max-width: 450px;
   margin: 55px auto;
-
-
   &__item {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 25px;
     width: 57px;
     height: 57px;
-
-     &--active {
-        border-radius: 50%;
-        background-color: $bgPaginatorActive;
-        color: white;
-        display: inline-block;
-        text-align: baseline;
-      }
-
-
-    &--prev {
-       @include arrow(-45deg, orange, 15px, 4px);
-    }
-
-    &--next {
-       @include arrow(135deg, orange, 15px, 4px);
-    }
-  }
-
-  &__link {
-      @include font(24px, 26px);
-      text-decoration: none;
-      padding: 13px 20px 10px 20px;
-      color: #2f2f2f;
+    margin-right: 25px;
+    vertical-align: middle;
+    &--active {
       display: inline-block;
-      vertical-align: text-bottom;
+      border-radius: 50%;
+      color: white;
+      background-color: $bgPaginatorActive;
+      text-align: baseline;
+    }
+    &--prev {
+      @include arrow(-45deg, orange, 15px, 4px);
+    }
+    &--next {
+      @include arrow(135deg, orange, 15px, 4px);
+    }
   }
+  &__link {
+    display: inline-block;
+    padding: 15px 20px 6px 22px;
+    color: #2f2f2f;
+    vertical-align: text-bottom;
+    text-decoration: none;
 
+    @include font(24px, 26px);
+  }
+}
+
+@media screen and(max-width: 560px) {
+  .paginator {
+    min-width: 300px;
+    margin: 0 auto;
+    transform: scale(.8);
+  }
 }
 
 

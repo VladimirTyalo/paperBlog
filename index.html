@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/base/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -49,9 +50,10 @@
             <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
             <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
           </ul>
-          <div class="header-nav__search-box">
-              <input type="text">
-          </div>
+
+          <label class="header-nav__input-label" for="nav-search"></label>
+          <input class="header-nav__input" id="nav-search" type="text">
+
           <div class="burger-wrapper">
             <ul class="burger-menu">
               <li class="burger-menu__item"><a href="#"></a></li>
@@ -68,7 +70,32 @@
 
       <div class="header-bottom__content">
         <div class="slider slider--main">
+           <input class="slider__input" id="slider__left-arrow" type="checkbox" >
+           <input class="slider__input" id="slider__right-arrow" type="checkbox">
+           <label class="slider__left-arrow" for="slider__left-arrow"></label>
+           <label class="slider__right-arrow" for="slider__right-arrow"></label>
 
+           <div class="slider__inner">
+
+              <div class="slider__unit">
+                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
+                <span class="slider__caption">Life Style</span>
+                <h2 class="slider__heading">My Daily Reading</h2>
+              </div>
+
+              <div class="slider__unit">
+                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
+                <span class="slider__caption">Life Style</span>
+                <h2 class="slider__heading">My Daily Reading</h2>
+              </div>
+
+              <div class="slider__unit">
+                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
+                <span class="slider__caption">Life Style</span>
+                <h2 class="slider__heading">My Daily Reading</h2>
+              </div>
+
+           </div>
         </div>
       </div>
 
@@ -77,179 +104,214 @@
     <main class="index-content">
       <div class="main-container">
         <article class="post">
-          <img  class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--life-style"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-          <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--life-style"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
 
 
-          <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <div class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
               </div>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <div class="post__tags">life style, friends, wonderful</div>
             </div>
           </div>
+        </article>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--fashion"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
 
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
+            </div>
+          </div>
         </article>
-        <article class="post">
-          <img  class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--fashion"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-          <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits"><i>10</i> favorits</span>
-              <span class="post__comments"><i>13</i> comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--photography"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--travel"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--music"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
+            </div>
+          </div>
+        </article>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--life-style"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
             </div>
           </div>
         </article>
         <article class="post">
-          <img class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--photography"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+           <div class="post__category-icon post__category-icon--travel"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
             </div>
           </div>
         </article>
-        <article class="post">
-          <img class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--travel"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--photography"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
             </div>
           </div>
         </article>
-        <article class="post">
-          <img class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--music"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
+         <article class="post">
+          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <div class="post__content-wrapper">
+            <div class="post__category-icon post__category-icon--music"></div>
+            <h2 class="post__heading">My Daily Reading Lists</h2>
+            <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
+              <a href="" class="post__read-more">Continue reading</a>
+            </p>
+
+
+            <div class="post__info">
+              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <div class="post__statistics">
+                <div class="post__author-info">
+                    Posted on 18th March  2015 by Mike Ross
+                </div>
+                <span class="post__favorits">10 favorits</span>
+                <span class="post__comments">13 comments</span>
+                <div class="post__tags">life style, friends, wonderful</div>
+              </div>
             </div>
           </div>
         </article>
-        <article class="post">
-          <img  class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--life-style"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <img class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--travel"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March 2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <img class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--photography"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
-            </div>
-          </div>
-        </article>
-        <article class="post">
-          <img  class="post__img" src="http://placehold.it/370x220" alt="" >
-          <div class="post__category-icon post__category-icon--music"></div>
-          <h2 class="post__heading">My Daily Reading Lists</h2>
-           <p class="post__preview">Lorem ipsum dolor sit amet, cons adipiscing elit.Aenean commodo ligula eget dolor aeneanssa. Cum sociis natoque penatibus etagnis parturient montes, nascetur ridiculus mus.
-            <a href="" class="post__read-more">Continue reading</a>
-          </p>
-           <div class="post__info">
-            <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
-            <div class="post__statistics">
-              <span class="post__author-info">
-                  Posted on 18th March  2015 by Mike Ross
-              </span>
-              <span class="post__favorits">10 favorits</span>
-              <span class="post__comments">13 comments</span>
-              <span class="post__tags">life style, friends, wonderful</span>
-            </div>
-          </div>
-        </article>
+
+
         <ul class="paginator">
           <li class="paginator__item paginator__item--prev">
             <a href="" class="paginator__link"></a>
@@ -277,19 +339,20 @@
             <ul class="social-links social-links--footer">
               <li class="social-links__item social-links__item--fb"><a href="#"></a></li>
               <li class="social-links__item social-links__item--tw"><a href="#"></a></li>
-              <li class="social-links__item social-links__item--g+"><a href="#"></a></li>
+              <li class="social-links__item social-links__item--g"><a href="#"></a></li>
               <li class="social-links__item social-links__item--tumblr"><a href="#"></a></li>
               <li class="social-links__item social-links__item--pinterest"><a href="#"></a></li>
             </ul>
           </div>
         </div>
 
-        <form action="" class="subscribe-form">
-          <fieldset class="subscribe-form__user-info">
-            <legend class="footer-top__heading">Daily Newsletters</legend>
-            <input class="subscribe-form__name" type="text" >
-            <input  class="subscribe-form__mail" type="text">
-          </fieldset>
+        <form class="subscribe-form" method="post" action="">
+
+          <legend class="footer-top__heading">Daily Newsletters</legend>
+          <input class="subscribe-form__name" type="text" placeholder="Name">
+
+          <input  class="subscribe-form__mail" type="text" placeholder="Email">
+
           <button class="btn btn--subscribe" type="submit">Subscribe</button>
         </form>
         <div class="footer-top__galery">
@@ -307,25 +370,18 @@
       </div>
 
       <div class="footer-bottom">
-        <span class="footer-bottom__moto">Paper - Clean Blog WordPress Theme with Material Design</span>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Help</a></li>
-          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Terms</a></li>
-          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">About</a></li>
-          <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Contacts</a></li>
-        </ul>
+        <div class="footer-bottom__wrapper">
+          <span class="footer-bottom__moto">Paper - Clean Blog WordPress Theme with Material Design</span>
+          <ul class="footer-nav">
+            <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Help</a></li>
+            <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Terms</a></li>
+            <li class="footer-nav__list-item"><a href="" class="footer-nav__link">About</a></li>
+            <li class="footer-nav__list-item"><a href="" class="footer-nav__link">Contacts</a></li>
+          </ul>
+        </div>
       </div>
 
     </footer>
-
-   <div class="ul">
-     <li><a href=""></a></li>
-     <li><a href=""></a></li>
-     <li><a href=""></a></li>
-     <li><a href=""></a></li>
-     <li><a href=""></a></li>
-   </div>
-
 
   </body>
 

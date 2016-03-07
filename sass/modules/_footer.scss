@@ -3,6 +3,11 @@
 @import "./../base/_functions.scss";
 
 
+// @import "my-icons/*.png";
+
+$my-icons-sprite-dimensions: true;
+
+
 
 .social {
   display: flex;
@@ -10,7 +15,6 @@
 
   justify-content: space-between;
 }
-
 
 .footer {
   color: white;
@@ -24,13 +28,12 @@
   max-width: $max-width-xl;
   margin: 0 auto;
   padding-top: 56px;
-  text-align: space-between;
 
+  justify-content: space-between;
   -webkit-flex-direction: row;
      -moz-flex-direction: row;
       -ms-flex-direction: row;
        -o-flex-direction: row;
-  justify-content: stretch;
   &__contacts {
     margin-right: 25px;
 
@@ -38,7 +41,9 @@
   }
   &__heading {
     margin-top: 0;
+    margin-bottom: 36px;
     padding-top: 0;
+    padding-left: 2,564%;
 
     @include font(24px, 24px);
   }
@@ -46,11 +51,13 @@
     @include font(14px, 24px);
   }
   &__galery {
-    flex: 0 0 372px;
+    flex: 1 1 280px;
+    align-self: center;
   }
 }
 
 .subscribe-form {
+  min-width: 280px;
   margin-right: 25px;
 
   @include font(24px, 24px);
@@ -60,7 +67,6 @@
     outline: none;
   }
 }
-
 
 .mini-galery {
   display: flex;
@@ -81,23 +87,136 @@
   flex-direction: row;
 
   justify-content: space-between;
-
   .social-links__item {
+    position: relative;
+    width: 56px;
+    height: 56px;
     margin-right: 10px;
-
+    background-color: black;
     a {
-      width: 56px;
-      height: 56px;
-      background-color: black;
-      border-radius: 0px;
-      // background-size: 120% 120%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 0;
+      background-image: sprite-url($icons);
+      background-repeat: no-repeat;
+      box-shadow: inset 0 0 1px 4px black;
+      transform: translate(-50%, -50%);
     }
     &:last-of-type {
       margin-right: 0;
     }
+    &__item--fb a {
+      background-position: sprite-position($icons, icon-fb, $adjustLeft, $adjustTop);
+    }
+    &__item--tw a {
+      background-position: sprite-position($icons, icon-twitter, $adjustLeft, $adjustTop);
+    }
+    &__item--g a {
+      background-position: sprite-position($icons, icon-gplus, $adjustLeft, $adjustTop);
+    }
+    &__item--tumblr a {
+      background-position: sprite-position($icons, icon-tumblr, $adjustLeft, $adjustTop);
+    }
+    &__item--pinterest a {
+      background-position: sprite-position($icons, icon-pinterest, $adjustLeft, $adjustTop);
+    }
   }
 }
 
+.footer-bottom {
+  width: 100%;
+  background: $bgHeaderTop;
+  &__moto {
+    padding: 25px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include font(14px, 24px, "Roboto");
+  }
+}
+
+.footer-bottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  min-width: $min-width-xl;
+  max-width: $max-width-xl;
+  margin: 0 auto;
+
+  justify-content: space-between;
+}
+
+.footer-nav {
+  list-style: none;
+  font-weight: 300;
+
+  @include font(14px, 24px, "Roboto");
+  &__list-item {
+    display: inline-block;
+
+    padding: 25px 15px;
+  }
+  &__link {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+
+    @include font(14px, 24px, "Roboto");
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .subscribe-form {
+    margin-top: 30px;
+  }
+
+  .footer-top {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-top__galery .footer-top__heading {
+    margin-left: 2,546%;
+  }
+
+  .footer-top__galery {
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    flex: 1 1 96%;
+  }
+
+  .mini-galery {
+    justify-content: space-around;
+    &__photo {
+      margin-right: 20px;
+      &:nth-of-type(3n) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and(max-width: 840px) {
+  .mini-galery--footer {
+    flex: 1 1 50%;
+  }
+}
+@media screen and(max-width: 730px) {
+  .footer-bottom__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 0;
+
+    flex-wrap: wrap;
+    maring-right: 0;
+    justify-content: space-around;
+  }
+}
 
 
 

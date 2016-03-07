@@ -4,8 +4,34 @@
 
 
 .header-bottom__content {
-  background: #757575;
-  // TODO remove height
-  height: 820px;
-  width: auto;
+  max-width: 100%;
+  background: url("../img/friends_small.jpg");
+  border: 1px solid transparent;
 }
+
+.slider {
+  width: 1170px;
+  height: 700px;
+  margin: 60px auto;
+
+  overflow: hidden;
+  display: flex;
+
+
+  &__input {
+    display: none;
+  }
+
+  &__inner {
+    width: 300%;
+  }
+  &__img {
+    display: inline_block;
+
+  }
+
+
+}
+
+
+
