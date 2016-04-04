@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VladimirTyalo/paperBlog/issues"
   },
-  "homepage": "https://github.com/VladimirTyalo/paperBlog#readme"
+  "homepage": "https://github.com/VladimirTyalo/paperBlog#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
 }
