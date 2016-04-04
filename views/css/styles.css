@@ -22,8 +22,6 @@ img {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -o-box-sizing: border-box;
 }
@@ -100,6 +98,9 @@ form, fieldset, legend, input, button {
 }
 /* line 13, ../sass/modules/_header.scss */
 .header-top__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-width: 200px;
   max-width: 1170px;
@@ -111,6 +112,10 @@ form, fieldset, legend, input, button {
 @media screen and (max-width: 600px) {
   /* line 13, ../sass/modules/_header.scss */
   .header-top__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
 }
@@ -119,6 +124,9 @@ form, fieldset, legend, input, button {
   padding-left: 5px;
   list-style: none;
   white-space: nowrap;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 /* line 32, ../sass/modules/_header.scss */
@@ -126,6 +134,9 @@ form, fieldset, legend, input, button {
   margin-right: 18px;
   text-align: end;
   white-space: nowrap;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
   flex: 1 1 0;
 }
 /* line 39, ../sass/modules/_header.scss */
@@ -154,6 +165,9 @@ form, fieldset, legend, input, button {
 /* line 66, ../sass/modules/_header.scss */
 .social-links {
   text-align: end;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 /* line 70, ../sass/modules/_header.scss */
@@ -229,6 +243,7 @@ form, fieldset, legend, input, button {
   left: 50%;
   display: block;
   color: #757575;
+  -webkit-transform: translateX(-60%);
   transform: translateX(-60%);
   font-family: "Roboto Slab", "Arial", serif;
   font-size: 15px;
@@ -305,6 +320,7 @@ form, fieldset, legend, input, button {
 /* line 51, ../sass/modules/_header_nav.scss */
 .header-nav__input {
   width: 0;
+  -webkit-transition: width .5s ease-in-out;
   transition: width .5s ease-in-out;
 }
 /* line 55, ../sass/modules/_header_nav.scss */
@@ -315,6 +331,7 @@ form, fieldset, legend, input, button {
 .header-nav__search:checked ~ .header-nav__input {
   display: inline-block;
   width: 20%;
+  -webkit-transition: width .5s ease-in-out;
   transition: width .5s ease-in-out;
 }
 
@@ -339,6 +356,7 @@ form, fieldset, legend, input, button {
   z-index: 30;
   top: 0;
   right: 0;
+  -webkit-transform: scale(0);
   transform: scale(0);
   width: 20em;
   width: 270px;
@@ -348,6 +366,7 @@ form, fieldset, legend, input, button {
   text-align: left;
   top: 300%;
   opacity: 0;
+  -webkit-transition: scale 1s, top 0.5s, opacity 0.7s;
   transition: scale 1s, top 0.5s, opacity 0.7s;
 }
 /* line 97, ../sass/modules/_header_nav.scss */
@@ -377,6 +396,7 @@ form, fieldset, legend, input, button {
 
 /* line 118, ../sass/modules/_header_nav.scss */
 .burger-wrapper:hover .burger-menu {
+  -webkit-transform: scale(1);
   transform: scale(1);
   top: 10%;
   opacity: 1;
@@ -393,7 +413,9 @@ form, fieldset, legend, input, button {
   background: white;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
   text-align: left;
+  -webkit-transform: scale(0);
   transform: scale(0);
+  -webkit-transition: scale 0.5s, opacity 1s;
   transition: scale 0.5s, opacity 1s;
   opacity: 0;
 }
@@ -403,6 +425,7 @@ form, fieldset, legend, input, button {
 }
 /* line 146, ../sass/modules/_header_nav.scss */
 .header-nav__item:hover > .header-nav__sub-menu {
+  -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
@@ -429,31 +452,57 @@ form, fieldset, legend, input, button {
 @media screen and (max-width: 880px) {
   /* line 177, ../sass/modules/_header_nav.scss */
   .header-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding-bottom: 10px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
   /* line 186, ../sass/modules/_header_nav.scss */
   .header-nav__list {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
   }
 
   /* line 190, ../sass/modules/_header_nav.scss */
   .header-nav__input-label {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
 
   /* line 194, ../sass/modules/_header_nav.scss */
   .header-nav__search {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
   }
 
   /* line 198, ../sass/modules/_header_nav.scss */
   .burger-wrapper {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
     align-self: center;
   }
 }
@@ -468,7 +517,13 @@ form, fieldset, legend, input, button {
 /* line 13, ../sass/modules/_header-bootm_content.scss */
 .slider {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
   max-width: 1170px;
   margin: 60px auto;
@@ -479,6 +534,9 @@ form, fieldset, legend, input, button {
 }
 /* line 26, ../sass/modules/_header-bootm_content.scss */
 .slider__inner {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   overflow: hidden;
 }
@@ -486,7 +544,10 @@ form, fieldset, legend, input, button {
 .slider__slides {
   list-style-type: none;
   white-space: nowrap;
+  -webkit-transition: -webkit-transform 2s ease-out;
+  transition: -webkit-transform 2s ease-out;
   transition: transform 2s ease-out;
+  transition: transform 2s ease-out, -webkit-transform 2s ease-out;
 }
 /* line 37, ../sass/modules/_header-bootm_content.scss */
 .slider__unit {
@@ -533,20 +594,24 @@ form, fieldset, legend, input, button {
 .slider__arrow--left {
   top: 50%;
   left: 3%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
   transform: translateY(-50%) rotate(45deg);
 }
 /* line 83, ../sass/modules/_header-bootm_content.scss */
 .slider__arrow--right {
   top: 50%;
   right: 3%;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
 }
 /* line 90, ../sass/modules/_header-bootm_content.scss */
 .slider #slider__left-arrow:checked ~ .slider__inner .slider__slides {
+  -webkit-transform: translateX(0);
   transform: translateX(0);
 }
 /* line 93, ../sass/modules/_header-bootm_content.scss */
 .slider #slider__right-arrow:checked ~ .slider__inner .slider__slides {
+  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
@@ -557,10 +622,15 @@ form, fieldset, legend, input, button {
 
 /* line 11, ../sass/modules/_post.scss */
 .main-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-width: 200px;
   max-width: 1170px;
   margin: 0 auto;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -571,8 +641,10 @@ form, fieldset, legend, input, button {
   margin-right: 1%;
   margin-bottom: 30px;
   border: 1px solid #dedede;
-  -webkit-box-shadow: 0 4px 4px 0 #ececec;
   box-shadow: 0 4px 4px 0 #ececec;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 32.6666667%;
+  -ms-flex: 0 0 32.6666667%;
   flex: 0 0 32.6666667%;
 }
 /* line 35, ../sass/modules/_post.scss */
@@ -590,12 +662,8 @@ form, fieldset, legend, input, button {
   background: lightgray;
   background-image: url('../img/icons-s04950eac8d.png');
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 4px 8px 0 #b3b3b3;
   box-shadow: 0 4px 4px 0 #b3b3b3;
   -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 /* line 55, ../sass/modules/_post.scss */
@@ -646,7 +714,13 @@ form, fieldset, legend, input, button {
   font-family: "Roboto", "Arial", serif;
   font-size: 15px;
   line-height: 27px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0.81081%;
+  -ms-flex: 1 1 0.81081%;
   flex: 1 1 0.81081%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 /* line 97, ../sass/modules/_post.scss */
@@ -662,8 +736,6 @@ form, fieldset, legend, input, button {
   color: #f8a700;
   background: white;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   transform: translateX(-50%);
   text-decoration: none;
   text-transform: uppercase;
@@ -679,8 +751,6 @@ form, fieldset, legend, input, button {
 .post__author-photo {
   display: inline-block;
   margin: 0 10px 28px 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   vertical-align: top;
   -ms-border-radius: 50%;
@@ -783,6 +853,9 @@ form, fieldset, legend, input, button {
 @media screen and (max-width: 1170px) {
   /* line 216, ../sass/modules/_post.scss */
   .post {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 48%;
+    -ms-flex: 1 1 48%;
     flex: 1 1 48%;
   }
   /* line 218, ../sass/modules/_post.scss */
@@ -795,12 +868,18 @@ form, fieldset, legend, input, button {
   }
   /* line 224, ../sass/modules/_post.scss */
   .post:last-of-type {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
   }
 }
 @media screen and (max-width: 700px) {
   /* line 232, ../sass/modules/_post.scss */
   .post {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
   }
   /* line 234, ../sass/modules/_post.scss */
@@ -857,8 +936,6 @@ form, fieldset, legend, input, button {
   border-top: 4px solid orange;
   border-left: 4px solid orange;
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   cursor: pointer;
 }
@@ -870,8 +947,6 @@ form, fieldset, legend, input, button {
   border-top: 4px solid orange;
   border-left: 4px solid orange;
   -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
   transform: rotate(135deg);
   cursonr: pointer;
 }
@@ -892,14 +967,25 @@ form, fieldset, legend, input, button {
   .paginator {
     min-width: 300px;
     margin: 0 auto;
+    -webkit-transform: scale(0.8);
     transform: scale(0.8);
     margin-bottom: 15px;
   }
 }
 /* line 12, ../sass/modules/_footer.scss */
 .social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -911,12 +997,20 @@ form, fieldset, legend, input, button {
 
 /* line 24, ../sass/modules/_footer.scss */
 .footer-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
   min-width: 200px;
   max-width: 1170px;
   margin: 0 auto;
   padding-top: 56px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
@@ -926,6 +1020,9 @@ form, fieldset, legend, input, button {
 /* line 37, ../sass/modules/_footer.scss */
 .footer-top__contacts {
   margin-right: 25px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 370px;
+  -ms-flex: 0 0 370px;
   flex: 0 0 370px;
 }
 /* line 42, ../sass/modules/_footer.scss */
@@ -946,7 +1043,12 @@ form, fieldset, legend, input, button {
 }
 /* line 53, ../sass/modules/_footer.scss */
 .footer-top__galery {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 280px;
+  -ms-flex: 1 1 280px;
   flex: 1 1 280px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
 }
 
@@ -957,6 +1059,9 @@ form, fieldset, legend, input, button {
   font-family: "Roboto", "Arial", serif;
   font-size: 24px;
   line-height: 24px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 370px;
+  -ms-flex: 0 0 370px;
   flex: 0 0 370px;
 }
 /* line 65, ../sass/modules/_footer.scss */
@@ -967,8 +1072,17 @@ form, fieldset, legend, input, button {
 
 /* line 71, ../sass/modules/_footer.scss */
 .mini-galery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 /* line 76, ../sass/modules/_footer.scss */
@@ -983,8 +1097,18 @@ form, fieldset, legend, input, button {
 
 /* line 85, ../sass/modules/_footer.scss */
 .social-links--footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 /* line 90, ../sass/modules/_footer.scss */
@@ -1004,6 +1128,7 @@ form, fieldset, legend, input, button {
   background-image: url('../img/icons-s04950eac8d.png');
   background-repeat: no-repeat;
   box-shadow: inset 0 0 1px 4px black;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 /* line 106, ../sass/modules/_footer.scss */
@@ -1048,11 +1173,21 @@ form, fieldset, legend, input, button {
 
 /* line 139, ../sass/modules/_footer.scss */
 .footer-bottom__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
   min-width: 200px;
   max-width: 1170px;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1087,8 +1222,16 @@ form, fieldset, legend, input, button {
 
   /* line 172, ../sass/modules/_footer.scss */
   .footer-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   /* line 177, ../sass/modules/_footer.scss */
@@ -1106,11 +1249,16 @@ form, fieldset, legend, input, button {
     margin-top: 30px;
     margin-right: 2%;
     margin-left: 2%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 96%;
+    -ms-flex: 1 1 96%;
     flex: 1 1 96%;
   }
 
   /* line 194, ../sass/modules/_footer.scss */
   .mini-galery {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
   /* line 196, ../sass/modules/_footer.scss */
@@ -1125,6 +1273,9 @@ form, fieldset, legend, input, button {
 @media screen and (max-width: 840px) {
   /* line 207, ../sass/modules/_footer.scss */
   .mini-galery--footer {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
     flex: 1 1 50%;
   }
 
@@ -1136,11 +1287,22 @@ form, fieldset, legend, input, button {
 @media screen and (max-width: 730px) {
   /* line 215, ../sass/modules/_footer.scss */
   .footer-bottom__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
     margin-right: 0;
     margin-left: 0;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
