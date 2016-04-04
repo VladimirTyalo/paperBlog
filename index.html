@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/base/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Paper Blog | home</title>
@@ -43,58 +42,78 @@
       <div class="header__nav-wrapper">
         <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav__item"><a href="#" class="header-nav__link">Home</a></li>
+            <li class="header-nav__item ">
+              <a href="#" class="header-nav__link">Home</a>
+              <ul class="header-nav__sub-menu">
+                <li class="header-nav__sub-item"><a href="">Fulwidth</a></li>
+                <li class="header-nav__sub-item"><a href="">With sidebar</a></li>
+                <li class="header-nav__sub-item"><a href="">Grid posts</a></li>
+              </ul>
+            </li>
             <li class="header-nav__item"><a href="#" class="header-nav__link">Layout</a></li>
             <li class="header-nav__item"><a href="#" class="header-nav__link">Features</a></li>
-            <li class="header-nav__item"><a href="#" class="header-nav__link">Categories</a></li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Categories</a>
+              <ul class="header-nav__sub-menu">
+                <li class="header-nav__sub-item"><a href="">Featured</a></li>
+                <li class="header-nav__sub-item"><a href="">Life Style</a></li>
+                <li class="header-nav__sub-item"><a href="">Fashion</a></li>
+                <li class="header-nav__sub-item"><a href="">Photography</a></li>
+                <li class="header-nav__sub-item"><a href="">Music</a></li>
+                <li class="header-nav__sub-item"><a href="">Travel</a></li>
+              </ul>
+            </li>
             <li class="header-nav__item"><a href="#" class="header-nav__link">About</a></li>
             <li class="header-nav__item"><a href="#" class="header-nav__link">Contact</a></li>
           </ul>
 
+
           <label class="header-nav__input-label" for="nav-search"></label>
-          <input class="header-nav__input" id="nav-search" type="text">
+          <input class="header-nav__search" id="nav-search" type="checkbox">
+          <input class="header-nav__input" id="nav-input" type="text">
+
 
           <div class="burger-wrapper">
+
             <ul class="burger-menu">
-              <li class="burger-menu__item"><a href="#"></a></li>
-              <li class="burger-menu__item"><a href="#"></a></li>
-              <li class="burger-menu__item"><a href="#"></a></li>
-              <li class="burger-menu__item"><a href="#"></a></li>
-              <li class="burger-menu__item"><a href="#"></a></li>
-              <li class="burger-menu__item"><a href="#"></a></li>
+              <li class="burger-menu__item"><a href="#">Useful Links</a></li>
+              <li class="burger-menu__item"><a href="#">Paper on Facebook</a></li>
+              <li class="burger-menu__item"><a href="#">Paper on Twitter</a></li>
+              <li class="burger-menu__item"><a href="#">Paper on Google Plus</a></li>
+              <li class="burger-menu__item"><a href="#">Find Help/FAQ</a></li>
+              <li class="burger-menu__item"><a href="#">Subscribe/RSS</a></li>
             </ul>
           </div>
+
 
         </nav>
       </div>
 
       <div class="header-bottom__content">
         <div class="slider slider--main">
-           <input class="slider__input" id="slider__left-arrow" type="checkbox" >
-           <input class="slider__input" id="slider__right-arrow" type="checkbox">
-           <label class="slider__left-arrow" for="slider__left-arrow"></label>
-           <label class="slider__right-arrow" for="slider__right-arrow"></label>
+           <input class="slider__input" id="slider__left-arrow" type="radio" name="arrow">
+           <input class="slider__input" id="slider__right-arrow" type="radio" name="arrow">
+           <label class="slider__arrow slider__arrow--left" for="slider__left-arrow"></label>
+           <label class="slider__arrow slider__arrow--right" for="slider__right-arrow"></label>
 
            <div class="slider__inner">
+              <ul class="slider__slides">
+                <li class="slider__unit">
+                  <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
+                   <div class="slider__caption">
+                    <span class="slider__title">Life Style</span>
+                    <h2 class="slider__heading">My Daily Reading</h2>
+                  </div>
+                </li>
 
-              <div class="slider__unit">
-                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
-                <span class="slider__caption">Life Style</span>
-                <h2 class="slider__heading">My Daily Reading</h2>
-              </div>
-
-              <div class="slider__unit">
-                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
-                <span class="slider__caption">Life Style</span>
-                <h2 class="slider__heading">My Daily Reading</h2>
-              </div>
-
-              <div class="slider__unit">
-                <img class="slider__img" src="img/doughter_slider.jpg" alt="" width="1170" height="700">
-                <span class="slider__caption">Life Style</span>
-                <h2 class="slider__heading">My Daily Reading</h2>
-              </div>
-
+                <li class="slider__unit">
+                  <img class="slider__img" src="img/resting_stranger_slider.jpg" alt="" width="1170" height="700">
+                  <div class="slider__caption">
+                    <span class="slider__title">Life Style</span>
+                    <h2 class="slider__heading">My Daily Reading</h2>
+                  </div>
+                </li>
+              </ul>
            </div>
         </div>
       </div>
@@ -104,7 +123,7 @@
     <main class="index-content">
       <div class="main-container">
         <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/bicycle_small.jpg" alt="byke" width="1170" height="580">
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--life-style"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -114,7 +133,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img\face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -127,7 +146,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/dj_small.jpg" alt="" width="1170" height="580">
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--fashion"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -137,7 +156,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+               <img class="post__author-photo" src="img\face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -150,7 +169,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/photographer_small.jpg" alt="" width="1170" height="580" >
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--photography"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -160,7 +179,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img/face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -173,7 +192,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/town_small.jpg" alt="" width="1170" height="580">
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--travel"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -183,7 +202,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img\face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -196,7 +215,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/headphones.jpg" alt=""width="1170" height="580" >
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--music"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -206,7 +225,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img/face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -219,7 +238,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/books_small.jpg" alt="cookies"width="1170" height="580" >
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--life-style"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -229,7 +248,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img\face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -242,7 +261,7 @@
           </div>
         </article>
         <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/city_sunset_small.jpg" alt=""width="1170" height="580" >
           <div class="post__content-wrapper">
            <div class="post__category-icon post__category-icon--travel"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -252,7 +271,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img/face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -265,7 +284,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/wood2_small.jpg" alt="" width="1170" height="580">
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--photography"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -275,7 +294,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img\face-xs.jpg" alt="author image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -288,7 +307,7 @@
           </div>
         </article>
          <article class="post">
-          <img  class="post__img" src="http://placehold.it/1170x580" alt="" >
+          <img  class="post__img" src="img/gitar_girl_small.jpg" alt=""width="1170" height="580" >
           <div class="post__content-wrapper">
             <div class="post__category-icon post__category-icon--music"></div>
             <h2 class="post__heading">My Daily Reading Lists</h2>
@@ -298,7 +317,7 @@
 
 
             <div class="post__info">
-              <img class="post__author-photo" src="http://placehold.it/56x56" alt="author image">
+              <img class="post__author-photo" src="img/face-xs.jpg" alt="author image">image">
               <div class="post__statistics">
                 <div class="post__author-info">
                     Posted on 18th March  2015 by Mike Ross
@@ -358,12 +377,12 @@
         <div class="footer-top__galery">
           <h3 class="footer-top__heading">Photos in Instagram</h3>
           <div class="mini-galery mini-galery--footer">
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
-            <img class="mini-galery__photo" src="http://placehold.it/110x110" alt="" >
+            <a href =""> <img class="mini-galery__photo" src="img/city_sunset_xs.jpg" alt="" ></a>
+            <a href =""> <img class="mini-galery__photo" src="img/skating_xs.jpg" alt="" ></a>
+            <a href =""> <img class="mini-galery__photo" src="img/onion_xs.jpg" alt="" ></a>
+            <a href =""> <img class="mini-galery__photo" src="img/notebook_xs.jpg" alt="" ></a>
+            <a href =""> <img class="mini-galery__photo" src="img/frog_small.jpg" alt="" ></a>
+            <a href =""> <img class="mini-galery__photo" src="img/flower_and_cookies_xs.jpg" alt="" ></a>
 
           </div>
         </div>

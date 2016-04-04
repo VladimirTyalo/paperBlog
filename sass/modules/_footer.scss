@@ -43,7 +43,7 @@ $my-icons-sprite-dimensions: true;
     margin-top: 0;
     margin-bottom: 36px;
     padding-top: 0;
-    padding-left: 2,564%;
+    padding-left: 2.564%;
 
     @include font(24px, 24px);
   }
@@ -153,7 +153,6 @@ $my-icons-sprite-dimensions: true;
   @include font(14px, 24px, "Roboto");
   &__list-item {
     display: inline-block;
-
     padding: 25px 15px;
   }
   &__link {
@@ -175,6 +174,9 @@ $my-icons-sprite-dimensions: true;
 
     flex-wrap: wrap;
     justify-content: space-around;
+    &__contacts {
+      padding-left: 1%;
+    }
   }
 
   .footer-top__galery .footer-top__heading {
@@ -183,8 +185,8 @@ $my-icons-sprite-dimensions: true;
 
   .footer-top__galery {
     margin-top: 30px;
-    margin-left: 2%;
     margin-right: 2%;
+    margin-left: 2%;
 
     flex: 1 1 96%;
   }
@@ -205,16 +207,34 @@ $my-icons-sprite-dimensions: true;
   .mini-galery--footer {
     flex: 1 1 50%;
   }
+  .footer-top__contacts {
+    padding-left: 2%;
+  }
 }
 @media screen and(max-width: 730px) {
   .footer-bottom__wrapper {
     display: flex;
     flex-direction: row-reverse;
+    margin-right: 0;
     margin-left: 0;
 
     flex-wrap: wrap;
-    maring-right: 0;
     justify-content: space-around;
+  }
+
+  .footer-top__contacts {
+    padding-left: 3%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer-top {
+     padding: 10px 20px;
+     margin-left: 40px;
+    &__contacts {
+      padding: 10px 10px;
+      width: auto;
+    }
   }
 }
 

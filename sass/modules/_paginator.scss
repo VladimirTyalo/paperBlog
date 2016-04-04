@@ -35,9 +35,11 @@
     }
     &--prev {
       @include arrow(-45deg, orange, 15px, 4px);
+      cursor: pointer;
     }
     &--next {
       @include arrow(135deg, orange, 15px, 4px);
+      cursonr: pointer;
     }
   }
   &__link {
@@ -56,6 +58,7 @@
     min-width: 300px;
     margin: 0 auto;
     transform: scale(.8);
+    margin-bottom: 15px;
   }
 }
 
