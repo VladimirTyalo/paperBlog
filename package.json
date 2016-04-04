@@ -19,5 +19,6 @@
   "devDependencies": {
     "express": "^4.13.4",
     "mustache": "^2.2.1"
-  }
+  },
+  "start": "node index.js"
 }
